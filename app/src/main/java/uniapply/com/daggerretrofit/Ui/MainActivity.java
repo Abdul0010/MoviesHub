@@ -1,6 +1,8 @@
-package uniapply.com.daggerretrofit;
+package uniapply.com.daggerretrofit.Ui;
 
 import androidx.appcompat.app.AppCompatActivity;
+import uniapply.com.daggerretrofit.R;
+
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
