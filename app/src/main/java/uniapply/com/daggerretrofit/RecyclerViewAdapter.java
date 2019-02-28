@@ -17,8 +17,10 @@ import uniapply.com.daggerretrofit.Pojo.Posts;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
     private List<Posts> data;
+    private RecyclerViewAdapter.ClickListener clickListener;
 
-    public RecyclerViewAdapter() {
+    public RecyclerViewAdapter(ClickListener clickListener) {
+        this.clickListener=clickListener;
         data=new ArrayList<>();
     }
 
@@ -49,5 +51,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             txtId=inflate.findViewById(R.id.id);
             txtTitle=inflate.findViewById(R.id.title);
         }
+    }
+    public interface ClickListener {
+        public void LaunchIntent(String filmName);
+    }
+    public void setData(List<Posts>data){
+        this.data.addAll(data);
+        notifyDataSetChanged();
     }
 }

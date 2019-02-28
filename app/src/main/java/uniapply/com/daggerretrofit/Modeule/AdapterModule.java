@@ -11,7 +11,7 @@ public class AdapterModule {
 
     @Provides
     @ActivityScope
-    public RecyclerViewAdapter getList(RecyclerViewAdapter.ClickLister clickLister){
+    public RecyclerViewAdapter getList(RecyclerViewAdapter.ClickListener clickLister){
         return new RecyclerViewAdapter(clickLister);
     }
 
