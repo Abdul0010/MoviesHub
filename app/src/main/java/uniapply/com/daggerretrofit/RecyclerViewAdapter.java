@@ -12,6 +12,8 @@ import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import uniapply.com.daggerretrofit.Pojo.Posts;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
@@ -44,12 +46,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView txtId;
-        private TextView txtTitle;
+        @BindView(R.id.id)
+        TextView txtId;
+        @BindView(R.id.title)
+         TextView txtTitle;
         public ViewHolder(View inflate) {
             super(inflate);
-            txtId=inflate.findViewById(R.id.id);
-            txtTitle=inflate.findViewById(R.id.title);
+            ButterKnife.bind(this,inflate);
         }
     }
     public interface ClickListener {

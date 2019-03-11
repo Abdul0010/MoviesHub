@@ -1,0 +1,7 @@
+
+lsquid:MaximumInheritanceDepth"<This class has 8 parents which is greater than 5 authorized.(õ¡õ±8ƒÛ„™“-
+ysquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÛøûÍ8ƒÛ„™“-
+~squid:S1450"[Remove the "recyclerView" field and declare it as a local variable in the relevant methods.(¿á© ýÿÿÿÿ8’Ã¡š“-
+Ÿsquid:S1186D"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦™ÏÍ8úâ½š“-
+¤squid:S1186P"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(„”­Æÿÿÿÿÿ8ðƒ‰š“-
+]squid:UselessImportCheck"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8úâ½š“-
