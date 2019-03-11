@@ -3,9 +3,16 @@ package uniapply.com.daggerretrofit.Ui;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import io.reactivex.Observable;
+import io.reactivex.Observer;
+import io.reactivex.Scheduler;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import timber.log.Timber;
 import uniapply.com.daggerretrofit.Component.ApplicationComponent;
 import uniapply.com.daggerretrofit.Component.DaggerMainActiviyComponent;
 import uniapply.com.daggerretrofit.Component.MainActiviyComponent;
@@ -58,17 +65,36 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
 
         mainActivityComponent.injectMainActivity(this);
         recyclerView.setAdapter(recyclerViewAdapter);
-        apiInterface.getPost().enqueue(new Callback<List<Posts>>() {
-            @Override
-            public void onResponse(Call<List<Posts>> call, Response<List<Posts>> response) {
-                populateRecyclerView(response.body());
-            }
+        Observable<List<Posts>> observable=apiInterface.getPost();
+        observable.subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .unsubscribeOn(Schedulers.io())
+                .subscribe(new Observer<List<Posts>>() {
+                    @Override
+                    public void onSubscribe(Disposable d) {
+                        Timber.i("on subscribe");
 
-            @Override
-            public void onFailure(Call<List<Posts>> call, Throwable t) {
+                    }
 
-            }
-        });
+                    @Override
+                    public void onNext(List<Posts> response) {
+                        populateRecyclerView(response);
+
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        Timber.i("error !");
+
+                    }
+
+                    @Override
+                    public void onComplete() {
+                        Timber.i("on complete");
+
+                    }
+                });
+
 
     }
 
