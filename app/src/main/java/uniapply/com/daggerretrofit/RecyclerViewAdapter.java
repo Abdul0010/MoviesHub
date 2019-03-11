@@ -3,7 +3,10 @@ package uniapply.com.daggerretrofit;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import org.w3c.dom.Text;
 
@@ -14,11 +17,12 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import uniapply.com.daggerretrofit.Pojo.Articles;
 import uniapply.com.daggerretrofit.Pojo.Posts;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
-    private List<Posts> data;
+    private List<Articles> data;
     private RecyclerViewAdapter.ClickListener clickListener;
 
     public RecyclerViewAdapter(ClickListener clickListener) {
@@ -35,8 +39,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.txtId.setText(data.get(position).id);
-        holder.txtTitle.setText(data.get(position).title);
+        holder.txtId.setText(data.get(position).getTitle());
+        holder.txtTitle.setText(data.get(position).getDescription());
+        Picasso.get().load(data.get(position).getUrlToImage()).into(holder.img);
+
 
     }
 
@@ -46,19 +52,18 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        @BindView(R.id.id)
-        TextView txtId;
-        @BindView(R.id.title)
-         TextView txtTitle;
+        @BindView(R.id.id) TextView txtId;
+        @BindView(R.id.title) TextView txtTitle;
+        @BindView(R.id.img) ImageView img;
         public ViewHolder(View inflate) {
             super(inflate);
-            ButterKnife.bind(this,inflate);
+            ButterKnife.bind(inflate);
         }
     }
     public interface ClickListener {
         public void LaunchIntent(String filmName);
     }
-    public void setData(List<Posts>data){
+    public void setData(List<Articles>data){
         this.data.addAll(data);
         notifyDataSetChanged();
     }

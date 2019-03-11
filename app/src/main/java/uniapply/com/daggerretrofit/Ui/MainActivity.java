@@ -18,7 +18,9 @@ import uniapply.com.daggerretrofit.Component.DaggerMainActiviyComponent;
 import uniapply.com.daggerretrofit.Component.MainActiviyComponent;
 import uniapply.com.daggerretrofit.Modeule.MainActivityContextModule;
 import uniapply.com.daggerretrofit.MyApplication;
+import uniapply.com.daggerretrofit.Pojo.Articles;
 import uniapply.com.daggerretrofit.Pojo.Posts;
+import uniapply.com.daggerretrofit.Pojo.news;
 import uniapply.com.daggerretrofit.Qualifires.ActivityContext;
 import uniapply.com.daggerretrofit.Qualifires.ApplicationContext;
 import uniapply.com.daggerretrofit.R;
@@ -29,6 +31,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 
+import java.util.Arrays;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -65,11 +68,11 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
 
         mainActivityComponent.injectMainActivity(this);
         recyclerView.setAdapter(recyclerViewAdapter);
-        Observable<List<Posts>> observable=apiInterface.getPost();
+        Observable<news> observable=apiInterface.getPost();
         observable.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .unsubscribeOn(Schedulers.io())
-                .subscribe(new Observer<List<Posts>>() {
+                .subscribe(new Observer<news>() {
                     @Override
                     public void onSubscribe(Disposable d) {
                         Timber.i("on subscribe");
@@ -77,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
                     }
 
                     @Override
-                    public void onNext(List<Posts> response) {
+                    public void onNext(news response) {
                         populateRecyclerView(response);
 
                     }
@@ -98,8 +101,9 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
 
     }
 
-    private void populateRecyclerView(List<Posts> body) {
-        recyclerViewAdapter.setData(body);
+    private void populateRecyclerView(news body) {
+        List<Articles>articles= Arrays.asList(body.getArticles());
+        recyclerViewAdapter.setData(articles);
     }
 
     @Override
