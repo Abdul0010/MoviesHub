@@ -52,16 +52,19 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        @BindView(R.id.id) TextView txtId;
-        @BindView(R.id.title) TextView txtTitle;
-        @BindView(R.id.img) ImageView img;
+        TextView txtId;
+         TextView txtTitle;
+         ImageView img;
         public ViewHolder(View inflate) {
             super(inflate);
-            ButterKnife.bind(inflate);
+            txtTitle=(TextView)inflate.findViewById(R.id.title);
+            img=(ImageView) inflate.findViewById(R.id.img);
+            txtId=(TextView)inflate.findViewById(R.id.id);
         }
     }
     public interface ClickListener {
         public void LaunchIntent(String filmName);
+
     }
     public void setData(List<Articles>data){
         this.data.addAll(data);
