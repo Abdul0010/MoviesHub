@@ -22,6 +22,7 @@ public class MyApplication extends Application {
     public static MyApplication get(Activity activity){
         return (MyApplication)activity.getApplication();
     }
+
     public ApplicationComponent getApplicationComponent(){
         return applicationComponent;
     }

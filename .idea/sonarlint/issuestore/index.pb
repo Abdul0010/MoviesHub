@@ -33,3 +33,15 @@ r
 Bapp/src/main/java/uniapply/com/daggerretrofit/Ui/MainActivity.java,5\9\593c9a866c68c5549b4844f440aa443226fa97f1
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+p
+@app/src/main/java/uniapply/com/daggerretrofit/Pojo/PostsDao.java,5\9\59d76ddd73e7194f09a765c12c37fe218d324f39
+n
+>app/src/main/java/uniapply/com/daggerretrofit/Pojo/Source.java,2\d\2d0a0743792a7da03a7d6f58937901d0fe7a873f
+l
+<app/src/main/java/uniapply/com/daggerretrofit/Pojo/news.java,1\f\1f83b78bbc7b12dfe9ffa80b13b95141a70788b7
+p
+@app/src/main/java/uniapply/com/daggerretrofit/Pojo/Articles.java,d\a\da64e390e6954c1fd266527275cbbbb0e54818fb
+…
+Uapp/src/main/java/uniapply/com/daggerretrofit/Network/InternetConnectionListener.java,d\8\d893b3c8918c2c60d25b766c522d3bfba546daa4
+‡
+Wapp/src/main/java/uniapply/com/daggerretrofit/Network/NetworkConnectionInterceptor.java,2\a\2acf550f2b4767783c96f8badd44c938b5e78dc0

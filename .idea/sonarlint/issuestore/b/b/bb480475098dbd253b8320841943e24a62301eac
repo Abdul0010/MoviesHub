@@ -1,5 +1,8 @@
 
-5squid:S2176."Rename this class.(Â×Öúÿÿÿÿ8úÍ…™“-
-Osquid:S1068"1Remove this unused "clickListener" private field.(­ªññ8ÒÅƒš“-
-lsquid:S001008"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÿµ8à„‚š“-
-]squid:UselessImportCheck"-Remove this unused import 'org.w3c.dom.Text'.(¶Äè‹şÿÿÿÿ8¤àö™“-
+asquid:UselessImportCheck"1Remove this unused import 'butterknife.BindView'.(§”¿Æúÿÿÿÿ8é´˜á–-
+Osquid:S1068"1Remove this unused "clickListener" private field.(­ªññ8öºŒà–-
+nsquid:UselessImportCheck"CRemove this unused import 'uniapply.com.daggerretrofit.Pojo.Posts'.(ÛÀ¦ß8­–à–-
+lsquid:S00100B"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÿµ8İ²šá–-
+5squid:S21766"Rename this class.(Â×Öúÿÿÿÿ8öºŒà–-
+]squid:UselessImportCheck"-Remove this unused import 'org.w3c.dom.Text'.(¶Äè‹şÿÿÿÿ8ÙşÆß–-
+dsquid:UselessImportCheck"4Remove this unused import 'butterknife.ButterKnife'.(Ùî²™şÿÿÿÿ8‘á–-

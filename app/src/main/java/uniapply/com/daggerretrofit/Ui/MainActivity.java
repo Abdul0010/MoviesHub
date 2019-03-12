@@ -19,7 +19,9 @@ import uniapply.com.daggerretrofit.Component.MainActiviyComponent;
 import uniapply.com.daggerretrofit.Modeule.MainActivityContextModule;
 import uniapply.com.daggerretrofit.MyApplication;
 import uniapply.com.daggerretrofit.Pojo.Articles;
+import uniapply.com.daggerretrofit.Pojo.MoviesResponse;
 import uniapply.com.daggerretrofit.Pojo.Posts;
+import uniapply.com.daggerretrofit.Pojo.Results;
 import uniapply.com.daggerretrofit.Pojo.news;
 import uniapply.com.daggerretrofit.Qualifires.ActivityContext;
 import uniapply.com.daggerretrofit.Qualifires.ApplicationContext;
@@ -68,11 +70,11 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
 
         mainActivityComponent.injectMainActivity(this);
         recyclerView.setAdapter(recyclerViewAdapter);
-        Observable<news> observable=apiInterface.getPost();
+        Observable<MoviesResponse> observable=apiInterface.getUpCommingMovies();
         observable.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .unsubscribeOn(Schedulers.io())
-                .subscribe(new Observer<news>() {
+                .subscribe(new Observer<MoviesResponse>() {
                     @Override
                     public void onSubscribe(Disposable d) {
                         Timber.i("on subscribe");
@@ -80,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
                     }
 
                     @Override
-                    public void onNext(news response) {
+                    public void onNext(MoviesResponse response) {
                         populateRecyclerView(response);
 
                     }
@@ -101,9 +103,9 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
 
     }
 
-    private void populateRecyclerView(news body) {
-        List<Articles>articles= Arrays.asList(body.getArticles());
-        recyclerViewAdapter.setData(articles);
+    private void populateRecyclerView(MoviesResponse body) {
+        List<Results>results= Arrays.asList(body.getResults());
+        recyclerViewAdapter.setData(results);
     }
 
     @Override

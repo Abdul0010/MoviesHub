@@ -1,7 +1,11 @@
 
-lsquid:MaximumInheritanceDepth"<This class has 8 parents which is greater than 5 authorized.(õ¡õ±8ƒÛ„™“-
+~squid:S1450)"[Remove the "recyclerView" field and declare it as a local variable in the relevant methods.(¿á© ýÿÿÿÿ8‹âšß–-
+nsquid:UselessImportCheck"CRemove this unused import 'uniapply.com.daggerretrofit.Pojo.Posts'.(ÛÀ¦ß8ƒ•ÍÞ–-
+]squid:UselessImportCheck"3Remove this unused import 'io.reactivex.Scheduler'.(çší8æ¥ÈÖ–-
+]squid:UselessImportCheck "-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8“¤ÌÞ–-
+Vsquid:UselessImportCheck"+Remove this unused import 'retrofit2.Call'.(Çö÷›8æ¥ÈÖ–-
+¤squid:S1186n"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(„”­Æÿÿÿÿÿ8‹âšß–-
 ysquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÛøûÍ8ƒÛ„™“-
-~squid:S1450"[Remove the "recyclerView" field and declare it as a local variable in the relevant methods.(¿á© ýÿÿÿÿ8’Ã¡š“-
-Ÿsquid:S1186D"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦™ÏÍ8úâ½š“-
-¤squid:S1186P"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(„”­Æÿÿÿÿÿ8ðƒ‰š“-
-]squid:UselessImportCheck"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8úâ½š“-
+Zsquid:UselessImportCheck"/Remove this unused import 'retrofit2.Response'.(¾éçï8æ¥ÈÖ–-
+Ysquid:UselessImportCheck"/Remove this unused import 'retrofit2.Callback'.(ž›¨,8æ¥ÈÖ–-
+lsquid:MaximumInheritanceDepth'"<This class has 8 parents which is greater than 5 authorized.(õ¡õ±8‹âšß–-
