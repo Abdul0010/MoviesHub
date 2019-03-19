@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
 
     private void populateRecyclerView(MoviesResponse body) {
         List<Results>results= Arrays.asList(body.getResults());
-        recyclerViewAdapter.setData(results);
+        recyclerViewAdapter.setData(results,activityContext);
     }
 
     @Override

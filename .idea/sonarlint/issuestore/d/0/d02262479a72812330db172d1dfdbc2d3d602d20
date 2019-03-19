@@ -1,3 +1,7 @@
 
+isquid:CommentedOutCodeLine-"<This block of commented-out lines of code should be removed.(¿«þƒ8Î©å¤—-
+nsquid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8Î©å¤—-
 wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÐŸ¾Êÿÿÿÿÿ
-Ÿsquid:S1186,"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ìæþý8¾¸ü–-
+isquid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(î°·Æ8Î©å¤—-
+nsquid:CommentedOutCodeLine/"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8Î©å¤—-
+isquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(‹í·8Î©å¤—-

@@ -1,0 +1,11 @@
+* [33m5932c0c[m adding movies api
+* [33m752f5b5[m changing the style adding cardview
+* [33m09f3b28[m replacing the dummy api with new api+using picasso to load image
+* [33mb353fe7[m adding rxjava to retrofit
+* [33made553e[m using butterknife
+* [33mb6be3e8[m simple ui
+* [33mb27ee07[m appplication class
+* [33md435e49[m adding recyckerviewAdapter
+* [33mb2a5190[m adding qualifires
+* [33m69804fb[m adding scopes
+* [33m91a1421[m fresh app

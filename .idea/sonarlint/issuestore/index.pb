@@ -45,3 +45,12 @@ p
 Uapp/src/main/java/uniapply/com/daggerretrofit/Network/InternetConnectionListener.java,d\8\d893b3c8918c2c60d25b766c522d3bfba546daa4
 ‡
 Wapp/src/main/java/uniapply/com/daggerretrofit/Network/NetworkConnectionInterceptor.java,2\a\2acf550f2b4767783c96f8badd44c938b5e78dc0
+v
+Fapp/src/main/java/uniapply/com/daggerretrofit/Pojo/MoviesResponse.java,9\c\9ca6ccc30cec26565473c3413af2c655423aecf0
+o
+?app/src/main/java/uniapply/com/daggerretrofit/Pojo/Results.java,e\6\e6f8c00fe515ab59cecb8fcff8d085839abb7124
+u
+Eapp/src/main/java/uniapply/com/daggerretrofit/Ui/DetailsActivity.java,a\0\a092872ae80da7d2bb824e063f42fe818ce0c03b
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302

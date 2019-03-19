@@ -1,8 +1,12 @@
 
-asquid:UselessImportCheck"1Remove this unused import 'butterknife.BindView'.(§”¿Æúÿÿÿÿ8é´˜á–-
-Osquid:S1068"1Remove this unused "clickListener" private field.(­ªññ8öºŒà–-
-nsquid:UselessImportCheck"CRemove this unused import 'uniapply.com.daggerretrofit.Pojo.Posts'.(ÛÀ¦ß8­–à–-
-lsquid:S00100B"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÿµ8İ²šá–-
-5squid:S21766"Rename this class.(Â×Öúÿÿÿÿ8öºŒà–-
-]squid:UselessImportCheck"-Remove this unused import 'org.w3c.dom.Text'.(¶Äè‹şÿÿÿÿ8ÙşÆß–-
-dsquid:UselessImportCheck"4Remove this unused import 'butterknife.ButterKnife'.(Ùî²™şÿÿÿÿ8‘á–-
+vsquid:UselessImportCheck"FRemove this unused import 'uniapply.com.daggerretrofit.Pojo.Articles'.(’€‡“şÿÿÿÿ8úªå¤—-
+Fsquid:S1604<"(Make this anonymous inner class a lambda(êô×€8òÿ€™-
+isquid:CommentedOutCodeLineF"<This block of commented-out lines of code should be removed.(—†Û¨8à²Ü™-
+Xsquid:S1854:":Remove this useless assignment to local variable "pairs1".(·ª‚°8à²Ü™-
+nsquid:UselessImportCheck"CRemove this unused import 'uniapply.com.daggerretrofit.Pojo.Posts'.(ÛÀ¦ß8­–à–-
+Osquid:S1068#"1Remove this unused "clickListener" private field.(­ªññ8öºŒà–-
+isquid:CommentedOutCodeLine6"<This block of commented-out lines of code should be removed.(’Ãã»8òÿ€™-
+lsquid:S00100^"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÿµ8òÿ€™-
+5squid:S2176T"Rename this class.(Â×Öúÿÿÿÿ8òÿ€™-
+Isquid:S1481:"+Remove this unused "pairs1" local variable.(·ª‚°8à²Ü™-
+dsquid:UselessImportCheck"4Remove this unused import 'android.widget.TextView'.(„Ë‚ˆÿÿÿÿÿ8ÚÓÙ¥™-
