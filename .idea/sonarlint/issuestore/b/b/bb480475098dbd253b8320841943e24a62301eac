@@ -1,12 +1,18 @@
 
-vsquid:UselessImportCheck"FRemove this unused import 'uniapply.com.daggerretrofit.Pojo.Articles'.(’€‡“þÿÿÿÿ8úªå¤—-
-Fsquid:S1604<"(Make this anonymous inner class a lambda(êô×€8òŽÿ€™-
-isquid:CommentedOutCodeLineF"<This block of commented-out lines of code should be removed.(—†Û¨8à²Ü™-
-Xsquid:S1854:":Remove this useless assignment to local variable "pairs1".(·ª‚°8à²Ü™-
-nsquid:UselessImportCheck"CRemove this unused import 'uniapply.com.daggerretrofit.Pojo.Posts'.(ÛÀ¦ß8­–à–-
-Osquid:S1068#"1Remove this unused "clickListener" private field.(­ªññ8öºŒà–-
-isquid:CommentedOutCodeLine6"<This block of commented-out lines of code should be removed.(’Ãã»8òŽÿ€™-
-lsquid:S00100^"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÿµ8òŽÿ€™-
-5squid:S2176T"Rename this class.(Â×žÖúÿÿÿÿ8òŽÿ€™-
-Isquid:S1481:"+Remove this unused "pairs1" local variable.(·ª‚°8à²Ü™-
-dsquid:UselessImportCheck"4Remove this unused import 'android.widget.TextView'.(„Ë‚ˆÿÿÿÿÿ8ÚÓÙ¥™-
+Hsquid:S1481/"*Remove this unused "stars" local variable.(ÀýÄ8çËÁ¯™-
+nsquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(ƒíÌ½üÿÿÿÿ8¡ž§®™-
+nsquid:CommentedOutCodeLine4"<This block of commented-out lines of code should be removed.(Ê®ú ûÿÿÿÿ8Íö¬©™-
+Jsquid:S1905Y",Remove this unnecessary cast to "RatingBar".(Ñ¢²ø8ß¡è¯™-
+lsquid:S00100_"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÿµ8òŽÿ€™-
+nsquid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(áœ‘Áÿÿÿÿÿ8à²Ü™-
+Osquid:S1068"1Remove this unused "clickListener" private field.(­ªññ8öºŒà–-
+nsquid:CommentedOutCodeLine6"<This block of commented-out lines of code should be removed.(ªø·íüÿÿÿÿ8±Õ¡©™-
+csquid:UselessImportCheck"8Remove this unused import 'android.graphics.PorterDuff'.(•ÙÄ±8çËÁ¯™-
+Osquid:S1905X",Remove this unnecessary cast to "ImageView".(‡‡é‘ûÿÿÿÿ8ß¡è¯™-
+5squid:S2176N"Rename this class.(Â×žÖúÿÿÿÿ8òŽÿ€™-
+psquid:UselessImportCheck"@Remove this unused import 'androidx.core.content.ContextCompat'.(üäÂùÿÿÿÿ8çËÁ¯™-
+Wsquid:S1854/"9Remove this useless assignment to local variable "stars".(ÀýÄ8çËÁ¯™-
+isquid:CommentedOutCodeLine8"<This block of commented-out lines of code should be removed.(Ž®ƒ÷8±Õ¡©™-
+nsquid:CommentedOutCodeLineW"<This block of commented-out lines of code should be removed.(Ç‘«üÿÿÿÿ8þñ®™-
+nsquid:CommentedOutCodeLineZ"<This block of commented-out lines of code should be removed.(›ˆ„¤ûÿÿÿÿ8àß½©™-
+isquid:CommentedOutCodeLineB"<This block of commented-out lines of code should be removed.(¸¯®¸8±Õ¡©™-

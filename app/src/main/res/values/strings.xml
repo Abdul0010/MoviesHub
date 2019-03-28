@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DaggerRetrofit</string>
+    <string name="app_name">MoviesHub</string>
     <string name="card_title">title</string>
     <string name="card_content">Content</string>
     <string name="action_share">Share</string>

@@ -14,7 +14,6 @@ public class MainActivityTest {
     public ActivityTestRule <MainActivity>mainActivityActivityTestRule=new ActivityTestRule<MainActivity>(MainActivity.class);
 
 
-    private String n
     @Before
     public void setUp() throws Exception {
     }
