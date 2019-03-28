@@ -43,10 +43,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.txtTitle.setText(data.get(position).getOverview());
-        LayerDrawable stars = (LayerDrawable) holder.ratingBar.getProgressDrawable();
+        holder.txtTitle.setText(data.get(position).getTitle());
+        holder.ratingBar.setText(data.get(position).getVote_average());
+        holder.txtLanguage.setText(data.get(position).getOriginal_language());
+        //LayerDrawable stars = (LayerDrawable) holder.ratingBar.getProgressDrawable();
 
-        holder.ratingBar.setRating(Float.parseFloat(data.get(position).getVote_average())/2);
+       // holder.ratingBar.setRating(Float.parseFloat(data.get(position).getVote_average())/2);
 
         Picasso.get().load("http://image.tmdb.org/t/p/w780//"+data.get(position).getPoster_path()).into(holder.img);
       //  final Pair pairs1=Pair.create(holder.img, ViewCompat.getTransitionName(holder.img));
@@ -78,17 +80,18 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView txtId;
         TextView txtTitle;
+        TextView txtLanguage;
         ImageView img;
-        RatingBar ratingBar;
+        TextView ratingBar;
 
         Button button;
         ViewHolder(View inflate) {
             super(inflate);
-            txtTitle=(TextView)inflate.findViewById(R.id.title);
-            img=(ImageView) inflate.findViewById(R.id.details_image);
-            ratingBar=(RatingBar) inflate.findViewById(R.id.rating);
-           // button=(Button) inflate.findViewById(R.id.more);
-//            txtId=(TextView)inflate.findViewById(R.id.id);
+            txtTitle=inflate.findViewById(R.id.title);
+            img=inflate.findViewById(R.id.details_image);
+            ratingBar=inflate.findViewById(R.id.rating);
+           // button=( inflate.findViewById(R.id.more);
+            txtLanguage=inflate.findViewById(R.id.language);
         }
     }
     public interface ClickListener {

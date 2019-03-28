@@ -34,22 +34,6 @@
                     android:layout_height="250dp"/>
 
 
-                <RatingBar
-                    android:id="@+id/rating"
-                    android:numStars="5"
-                    android:layout_width="wrap_content"
-                    android:padding="5dp"
-
-                    style="?android:attr/ratingBarStyleIndicator"
-                    android:theme="@style/RatingBar"
-
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="20dp"
-                    android:rating="0"
-                    android:stepSize="0.5" />
-
                     <!--<ImageView-->
                         <!--android:layout_marginLeft="8dp"-->
                         <!--android:layout_width="10dp"-->
@@ -87,9 +71,10 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginLeft="13dp"
                 android:layout_marginBottom="25dp"
                 android:layout_marginTop="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -100,21 +85,21 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                <!--<ImageView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_marginLeft="10dp"-->
-                    <!--android:src="@drawable/ic_bed" />-->
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/ic_stars_yellow_a700_24dp" />
 
                 <TextView
-                    android:id="@+id/bed"
+                    android:id="@+id/rating"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:layout_marginLeft="5dp"
                     android:text="3 bed"
                     android:textColor="#adb3c0"
-                    android:textSize="12dp" />
+                    android:textSize="15dp" />
 
                 </LinearLayout>
 
@@ -130,14 +115,14 @@
                     <!--android:src="@drawable/ic_shower" />-->
 
                 <TextView
-                    android:id="@+id/shower"
+                    android:id="@+id/language"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:layout_marginLeft="5dp"
                     android:text="2 bath"
                     android:textColor="#adb3c0"
-                    android:textSize="12dp" />
+                    android:textSize="15dp" />
 
                 </LinearLayout>
 
@@ -153,15 +138,15 @@
                     <!--android:layout_height="wrap_content"-->
                     <!--android:src="@drawable/ic_square" />-->
 
-                <TextView
-                    android:id="@+id/sqft"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:layout_marginLeft="5dp"
-                    android:text="2100 sqft"
-                    android:textColor="#adb3c0"
-                    android:textSize="12dp" />
+                <!--<TextView-->
+                    <!--android:id="@+id/sqft"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:text="2100 sqft"-->
+                    <!--android:textColor="#adb3c0"-->
+                    <!--android:textSize="12dp" />-->
 
                 </LinearLayout>
 
