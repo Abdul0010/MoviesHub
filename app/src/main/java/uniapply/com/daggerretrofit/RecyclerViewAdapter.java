@@ -1,6 +1,7 @@
 package uniapply.com.daggerretrofit;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.LayerDrawable;
 import android.view.LayoutInflater;
@@ -17,9 +18,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import uniapply.com.daggerretrofit.Pojo.Results;
+import uniapply.com.daggerretrofit.Ui.DetailsActivity;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
@@ -53,21 +56,22 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         Picasso.get().load("http://image.tmdb.org/t/p/w780//"+data.get(position).getPoster_path()).into(holder.img);
       //  final Pair pairs1=Pair.create(holder.img, ViewCompat.getTransitionName(holder.img));
 
-//        holder.button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent= new Intent(v.getContext(), DetailsActivity.class);
-//                intent.putExtra("rating",data.get(position).getVote_average());
-//                intent.putExtra("lang",data.get(position).getOriginal_language());
-//                intent.putExtra("releaseDate",data.get(position).getRelease_date());
-//                intent.putExtra("overview",data.get(position).getOverview());
-//                intent.putExtra("img",data.get(position).getPoster_path());
-//
-//               // ActivityOptions transitionActivityOption=ActivityOptions.makeSceneTransitionAnimation((Activity)mContext,pairs1);
-//
-//                v.getContext().startActivity(intent);
-//            }
-//        });
+        holder.button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(v.getContext(), DetailsActivity.class);
+                intent.putExtra("rating",data.get(position).getVote_average());
+                intent.putExtra("title",data.get(position).getTitle());
+                intent.putExtra("lang",data.get(position).getOriginal_language());
+                intent.putExtra("releaseDate",data.get(position).getRelease_date());
+                intent.putExtra("overview",data.get(position).getOverview());
+                intent.putExtra("img",data.get(position).getPoster_path());
+
+               // ActivityOptions transitionActivityOption=ActivityOptions.makeSceneTransitionAnimation((Activity)mContext,pairs1);
+
+                v.getContext().startActivity(intent);
+            }
+        });
 
 
     }
@@ -84,13 +88,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         ImageView img;
         TextView ratingBar;
 
-        Button button;
+        CardView button;
         ViewHolder(View inflate) {
             super(inflate);
             txtTitle=inflate.findViewById(R.id.title);
             img=inflate.findViewById(R.id.details_image);
             ratingBar=inflate.findViewById(R.id.rating);
-           // button=( inflate.findViewById(R.id.more);
+            button= inflate.findViewById(R.id.card_view);
             txtLanguage=inflate.findViewById(R.id.language);
         }
     }

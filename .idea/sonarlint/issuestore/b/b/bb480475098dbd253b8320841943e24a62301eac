@@ -1,18 +1,15 @@
 
-Hsquid:S1481/"*Remove this unused "stars" local variable.(ÀıÄ8çËÁ¯™-
-nsquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(ƒíÌ½üÿÿÿÿ8¡§®™-
-nsquid:CommentedOutCodeLine4"<This block of commented-out lines of code should be removed.(Ê®ú ûÿÿÿÿ8Íö¬©™-
-Jsquid:S1905Y",Remove this unnecessary cast to "RatingBar".(Ñ¢²ø8ß¡è¯™-
-lsquid:S00100_"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÿµ8òÿ€™-
-nsquid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(áœ‘Áÿÿÿÿÿ8à²Ü™-
-Osquid:S1068"1Remove this unused "clickListener" private field.(­ªññ8öºŒà–-
-nsquid:CommentedOutCodeLine6"<This block of commented-out lines of code should be removed.(ªø·íüÿÿÿÿ8±Õ¡©™-
+hsquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(­ıù8 •…œ-
+isquid:CommentedOutCodeLineD"<This block of commented-out lines of code should be removed.(¸¯®¸8±Õ¡©™-
+nsquid:CommentedOutCodeLine6"<This block of commented-out lines of code should be removed.(Ê®ú ûÿÿÿÿ8Íö¬©™-
 csquid:UselessImportCheck"8Remove this unused import 'android.graphics.PorterDuff'.(•ÙÄ±8çËÁ¯™-
-Osquid:S1905X",Remove this unnecessary cast to "ImageView".(‡‡é‘ûÿÿÿÿ8ß¡è¯™-
-5squid:S2176N"Rename this class.(Â×Öúÿÿÿÿ8òÿ€™-
+5squid:S2176P"Rename this class.(Â×Öúÿÿÿÿ8òÿ€™-
+esquid:UselessImportCheck"5Remove this unused import 'android.widget.RatingBar'.(ØªÛŒıÿÿÿÿ8¤ªƒœ-
+lsquid:S00100b"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÿµ8òÿ€™-
+nsquid:CommentedOutCodeLineB"<This block of commented-out lines of code should be removed.(áœ‘Áÿÿÿÿÿ8à²Ü™-
+isquid:CommentedOutCodeLine:"<This block of commented-out lines of code should be removed.(®ƒ÷8±Õ¡©™-
+isquid:CommentedOutCodeLine3"<This block of commented-out lines of code should be removed.(¯Ù¹¨8Ìé„œ-
+Osquid:S1068"1Remove this unused "clickListener" private field.(­ªññ8öºŒà–-
+nsquid:CommentedOutCodeLine8"<This block of commented-out lines of code should be removed.(ªø·íüÿÿÿÿ8±Õ¡©™-
+isquid:CommentedOutCodeLine]"<This block of commented-out lines of code should be removed.(¡Ñ±ú8àß½©™-
 psquid:UselessImportCheck"@Remove this unused import 'androidx.core.content.ContextCompat'.(üäÂùÿÿÿÿ8çËÁ¯™-
-Wsquid:S1854/"9Remove this useless assignment to local variable "stars".(ÀıÄ8çËÁ¯™-
-isquid:CommentedOutCodeLine8"<This block of commented-out lines of code should be removed.(®ƒ÷8±Õ¡©™-
-nsquid:CommentedOutCodeLineW"<This block of commented-out lines of code should be removed.(Ç‘«üÿÿÿÿ8şñ®™-
-nsquid:CommentedOutCodeLineZ"<This block of commented-out lines of code should be removed.(›ˆ„¤ûÿÿÿÿ8àß½©™-
-isquid:CommentedOutCodeLineB"<This block of commented-out lines of code should be removed.(¸¯®¸8±Õ¡©™-

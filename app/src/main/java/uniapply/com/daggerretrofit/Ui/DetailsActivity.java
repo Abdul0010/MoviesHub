@@ -15,13 +15,15 @@ import com.squareup.picasso.Picasso;
 public class DetailsActivity extends AppCompatActivity {
     @BindView(R.id.rating)
     TextView rating;
+    @BindView(R.id.title)
+    TextView title;
     @BindView(R.id.language)
     TextView lang;
-    @BindView(R.id.release_date)
+    @BindView(R.id.releaseDate)
     TextView release_date;
     @BindView(R.id.overview)
     TextView overview;
-    @BindView(R.id.img)
+    @BindView(R.id.imgPoster)
     ImageView img;
 
     @Override
@@ -31,6 +33,7 @@ public class DetailsActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         Intent intent=getIntent();
         rating.setText(intent.getStringExtra("rating"));
+        title.setText(intent.getStringExtra("title"));
         lang.setText(intent.getStringExtra("lang"));
         release_date.setText(intent.getStringExtra("releaseDate"));
         overview.setText(intent.getStringExtra("overview"));
