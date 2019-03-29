@@ -1,9 +1,11 @@
 package uniapply.com.daggerretrofit;
 
+import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.LayerDrawable;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -69,7 +71,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
                // ActivityOptions transitionActivityOption=ActivityOptions.makeSceneTransitionAnimation((Activity)mContext,pairs1);
 
-                v.getContext().startActivity(intent);
+                Bundle bundle= ActivityOptions.makeCustomAnimation(v.getContext(),R.anim.lefttoright,R.anim.righttoleft).toBundle();
+                v.getContext().startActivity(intent,bundle);
             }
         });
 
