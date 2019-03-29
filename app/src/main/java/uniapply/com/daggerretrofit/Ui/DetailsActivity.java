@@ -31,15 +31,15 @@ public class DetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
         ButterKnife.bind(this);
-        Intent intent=getIntent();
+        Intent intent = getIntent();
         rating.setText(intent.getStringExtra("rating"));
         title.setText(intent.getStringExtra("title"));
         lang.setText(intent.getStringExtra("lang"));
         release_date.setText(intent.getStringExtra("releaseDate"));
         overview.setText(intent.getStringExtra("overview"));
-        Picasso.get().load("http://image.tmdb.org/t/p/w780//"+intent.getStringExtra("img")).into(img);
-
-
+        Picasso.get().load("http://image.tmdb.org/t/p/w780//" + intent.getStringExtra("img"))
+               .fit()
+                .into(img);
 
     }
 }

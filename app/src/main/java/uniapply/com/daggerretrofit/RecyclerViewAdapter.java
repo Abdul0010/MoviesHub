@@ -53,7 +53,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
        // holder.ratingBar.setRating(Float.parseFloat(data.get(position).getVote_average())/2);
 
-        Picasso.get().load("http://image.tmdb.org/t/p/w780//"+data.get(position).getPoster_path()).into(holder.img);
+        Picasso.get().load("http://image.tmdb.org/t/p/w780//"+data.get(position).getPoster_path()).fit().into(holder.img);
       //  final Pair pairs1=Pair.create(holder.img, ViewCompat.getTransitionName(holder.img));
 
         holder.button.setOnClickListener(new View.OnClickListener() {

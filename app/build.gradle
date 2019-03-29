@@ -72,6 +72,9 @@ dependencies {
     //espresso
     androidTestImplementation 'androidx.test:runner:1.1.0'
     androidTestImplementation 'androidx.test:rules:1.1.0'
-
+    //cropImage
+    implementation 'jp.wasabeef:picasso-transformations:2.2.1'
+    // If you want to use the GPU Filters
+    implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
 
 }

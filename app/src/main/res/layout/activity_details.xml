@@ -58,8 +58,8 @@
                 <ImageView
                     android:id="@+id/imgPoster"
                     android:layout_width="match_parent"
-                    android:layout_height="210dp"
                     android:scaleType="centerCrop"
+                    android:layout_height="250dp"
                     android:src="@drawable/outdoorgames" />
 
 
@@ -113,15 +113,15 @@
                         android:textStyle="bold"
                         android:textSize="19dp" />
 
-                    <TextView
-                        android:id="@+id/tvaddress"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="5dp"
-                        android:text="Comming Soon"
-                        android:textColor="#adb3c0"
-                        android:textSize="14dp" />
+                    <!--<TextView-->
+                        <!--android:id="@+id/tvaddress"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:text="Comming Soon"-->
+                        <!--android:textColor="#adb3c0"-->
+                        <!--android:textSize="14dp" />-->
 
                 </LinearLayout>
 
